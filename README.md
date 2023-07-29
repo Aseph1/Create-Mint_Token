@@ -1,25 +1,16 @@
-# Create and Mint Token
+# DEGEN Token Contract
 
-MyToken is an ERC20-compliant token smart contract deployed on a local HardHat network. The contract allows the contract owner to mint tokens to a provided address and enables any user to burn and transfer tokens.
+DEGEN is an ERC-20 token contract that provides basic functionalities for a gaming platform. It allows the platform to create and distribute new tokens as rewards to players, enables token transfers between players, and supports token redemption for in-game items. Additionally, players can check their token balances and burn tokens they no longer need.
 
-a. Go to https://remix.ethereum.org/.
+1. Minting new tokens: The platform owner can create new tokens and distribute them to players as rewards.
 
-b. Connect Remix to the local HardHat network by selecting the "HardHat" environment.
+2. Transferring tokens: Players can transfer their tokens to other addresses on the platform.
 
-c. Create a new Solidity file and paste the MyToken contract code.
+3. Redeeming tokens: Players can redeem their tokens for items in the in-game store. The redemption logic is handled by an external contract called GameStore.
 
-d. Deploy the contract from Remix by clicking the "Deploy & Run Transactions" tab.
+4. Checking token balance: Players can check their token balance at any time using the getBalance function.
 
-## Contract Details
-Name: MyToken
-
-Symbol: MTK
-
-Decimals: 18 (standard for most tokens)
-
-Total Supply: Initial supply set during contract deployment
-
-Minting Limit: No minting limit, only restricted by the contract owner's balance
+5. Burning tokens: Players can burn (destroy) tokens they own but no longer need, making them permanently unrecoverable.
 
 ## Help
 
